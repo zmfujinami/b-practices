@@ -1,13 +1,13 @@
 class UrlObject {
 
-  private urls: string[] = []
+  private urlArr: string[] = []
 
   constructor(urls: string[]) {
-    this.urls = urls
+    this.urlArr = urls
   }
 
   getOnlySsl (): string[] {
-    return this.urls.filter((value) => {
+    return this.urlArr.filter((value) => {
       return value.match(/^https/) !== null;
     })
   }

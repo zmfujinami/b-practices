@@ -1,0 +1,23 @@
+version: '3'
+services:
+  b-practice-vue:
+    build: ./vue
+    ports:
+      - 8080:8080
+    container_name: b-practice-vue
+    hostname: b-practice-vue
+    working_dir: /src
+    volumes:
+      - ../src/vue:/src
+    tty: true
+
+  b-practice-api:
+    build: ./api
+    ports:
+      - 8081:8081
+    container_name: b-practice-api
+    hostname: b-practice-api
+    working_dir: /src
+    volumes:
+      - ../src/api:/src
+    tty: true

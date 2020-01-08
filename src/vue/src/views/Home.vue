@@ -5,12 +5,22 @@
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from 'vue-property-decorator';
-  // @ is an alias to /src
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import {Component, Vue, Watch} from 'vue-property-decorator';
+  import {Post} from "@/models/Post";
+
 
   @Component({})
   export default class Home extends Vue {
+
+    private posts: Post[] = []
+
+    created() {
+
+    }
+
+    mounted() {
+
+    }
 
   }
 </script>

@@ -10,6 +10,8 @@ services:
     volumes:
       - ../src/vue:/src
     tty: true
+    environment:
+      - VUE_APP_API_ENDPOINT=http://localhost:8081/
 
   b-practice-api:
     build: ./api

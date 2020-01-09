@@ -75,8 +75,8 @@
     /**
      * 税込計算（Computed）
      */
-    get priceIntax(): number {
-      return Math.round(this.post.price * (1 + this.tax))
+    get priceIntax(): string {
+      return Math.round(this.post.price * (1 + this.tax)).toLocaleString()
     }
 
     /**

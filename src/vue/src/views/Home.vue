@@ -31,7 +31,7 @@
   @Component
   export default class Home extends Vue {
 
-    private httpClient = new HttpClient()
+    private httpClient: HttpClient = new HttpClient()
 
     private posts: Post[] = []
 
